@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-19T20:36:19.091Z",
+    "end": "2021-09-19T20:36:32.507Z",
+    "duration": 13416,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4063fcbb-9c6a-415e-9d56-cf4bf8315750",
+      "title": "",
+      "fullFile": "cypress/integration/SampleReport/TC06_mouseover.spec.js",
+      "file": "cypress/integration/SampleReport/TC06_mouseover.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8fec128a-b6f9-4af5-8b8f-3e4374c906e2",
+          "title": "Mouse over Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Click on sign up link",
+              "fullTitle": "Mouse over Test Click on sign up link",
+              "timedOut": null,
+              "duration": 10779,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://automationpractice.com/index.php'); // cy.get('.ajax_add_to_cart_button').first().click()\ncy.get('.ajax_add_to_cart_button').eq(2).click();\ncy.get('.cross').click();\ncy.wait(3000);\ncy.contains('Cart').trigger('mouseover'); // cy.get('[title=View my shopping cart]').trigger('mouseover')\n// cy.get('.cart_block').should('be.hidden').invoke('show')\ncy.get('#button_order_cart').click();\ncy.url().should('include', 'controller=order');",
+              "err": {},
+              "uuid": "62837244-56cd-4abf-bb64-7c10ee0c9385",
+              "parentUUID": "8fec128a-b6f9-4af5-8b8f-3e4374c906e2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "62837244-56cd-4abf-bb64-7c10ee0c9385"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10779,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
